@@ -6,11 +6,10 @@ import styled from  'styled-components'
 
 import './index.css'
 
-
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <MainContainer>
     <Helmet
-      title="Gatsby Default Starter"
+      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -28,7 +27,18 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
+//data
+export const query = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+//styles
 const MainContainer = styled.div`
-      padding: 0;
-      margin: 0;
+  padding: 0;
+  margin: 0;
 `
