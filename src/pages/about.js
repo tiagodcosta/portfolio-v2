@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 import Navigation from '../components/Navigation'
 
-const About = ({data}) => (
+const About = () =>  (
   <Container>
     <Content>
       <Navigation color="#000" />
-      <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
-      <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
+      <h1>About me</h1>
+      <p>Hi! My name is Tiago. I'm a web developer based in Boston. </p>
     </Content>
   </Container>
 )
@@ -32,19 +32,4 @@ const Content = styled.section`
   max-width: 50%;
   display: flex;
   flex-direction: column;
-`
-
-export const query = graphql`
-    query AboutQuery {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-            }
-            excerpt
-          }
-        }
-      }
-    } 
 `
