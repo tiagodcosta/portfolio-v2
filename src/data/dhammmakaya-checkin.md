@@ -1,6 +1,7 @@
 ---
 title: "Dhammakaya check-in app"
-date: "2017"
+date: "2017-12-12"
+year: "2017"
 tags: "React, Redux, Firebase"
 link: "https://github.com/bostonjukebox/boston-jukebox-reactjs"
 ---

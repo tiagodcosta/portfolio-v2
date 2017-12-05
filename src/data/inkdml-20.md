@@ -1,6 +1,7 @@
 ---
 title: "Inkdml 2.0"
-date: "2017"
+date: "2017-12-13"
+year: "2017"
 tags: "Polymer, SASS, UI library"
 link: "https://github.com/bostonjukebox/boston-jukebox-reactjs"
 ---

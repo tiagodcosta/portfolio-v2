@@ -9,7 +9,7 @@ const Projects = ({ data }) => (
   <Container>
     <Content>
       <Navigation color="#000" />
-      <h1>Projects:</h1>
+      <h1>Projects</h1>
       <p>I've worked on different types of projects, technologies and concepts including JavaScript, Sass/Less, UX design, Digital Art and data modeling.  
       
       Here are some of my recent ones.</p>
@@ -17,7 +17,7 @@ const Projects = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({node, index}) => (
           <li key={index}>
             <h2>{node.frontmatter.title}</h2>
-            <p>{node.frontmatter.date}</p>
+            <p>{node.frontmatter.year}</p>
             <p>{node.frontmatter.tags}</p>
             <p>{node.excerpt}</p>
           </li>
@@ -52,13 +52,14 @@ const List = styled.ul`
     list-style: none;
 `
 export const query = graphql`
-query ListQuery {
-  allMarkdownRemark {
+query ProjectsQuery {
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
     edges {
       node {
         frontmatter {
           title
-          date
+          date(formatString: "YYYY-MM-DD")
+          year
           tags
           link
         }
@@ -66,5 +67,5 @@ query ListQuery {
       }
     }
   }
-} 
+}
 `

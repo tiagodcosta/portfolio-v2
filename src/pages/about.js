@@ -9,7 +9,11 @@ const About = () =>  (
     <Content>
       <Navigation color="#000" />
       <h1>About me</h1>
-      <p>Hi! My name is Tiago. I'm a web developer based in Boston. </p>
+      <p>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston. </p>
+      <p>Currently I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</p>
+      <p>I love to code and put the user first in a project. I am in constantly contact with new concepts, technologies and other developers. I always attend hackathons and meetups in the Boston Area, where I always chat with talent people.</p>
+      <p>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</p>
+      <Link to="../files/costatiago_resume.pdf"><p>Check my complete resume</p></Link>
     </Content>
   </Container>
 )
@@ -23,9 +27,9 @@ const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(40deg, #4691db, #1976D2); 
+  background: #fff; 
   font-family: 'Lato', Verdana, sans-serif;
-  color: #fff; 
+  color: #000; 
 `
 //Content styles
 const Content = styled.section`

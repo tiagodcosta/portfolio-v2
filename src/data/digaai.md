@@ -1,6 +1,7 @@
 ---
 title: "Digaai"
-date: "2015"
+date: "2015-10-11"
+year: "2015"
 tags: "WordPress, UI, UX"
 link: "https://www.digaai.com"
 ---

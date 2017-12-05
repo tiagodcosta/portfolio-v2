@@ -1,6 +1,7 @@
 ---
 title: "Dhammakaya email newsletter"
-date: "2015"
+date: "2016-01-01"
+year: "2016"
 tags: "Email templates, HTML, UI"
 link: "https://github.com/bostonjukebox/boston-jukebox-reactjs"
 ---

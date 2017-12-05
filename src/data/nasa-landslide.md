@@ -1,6 +1,7 @@
 ---
 title: "NASA Landslide App"
-date: "2017"
+date: "2017-04-01"
+year: "2017"
 tags: "React Native, API, UX"
 link: "https://github.com/bostonjukebox/boston-jukebox-reactjs"
 ---
