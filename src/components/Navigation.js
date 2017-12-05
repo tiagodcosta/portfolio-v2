@@ -1,15 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react'
+import styled, { attrs } from 'styled-components'
 import Link from 'gatsby-link'
-
-const Navigation = ({color}) => 
-  <Nav>
-    <Link to="/about/"><Button>Read about me</Button></Link>
-    <Link to="/projects/"><Button>View my projects</Button></Link>
-    <Link to="/contact/"><Button>Contact me</Button></Link>
-  </Nav>
-
-export default Navigation
 
 const Nav = styled.nav`
   display: flex;
@@ -23,9 +14,21 @@ const Button = styled.button`
   background: transparent; 
   border: 2px solid ${props => props.color || '#fff'};
   cursor: pointer;
+  outline: focus;
 
   &:hover {
     color: #a51321;
     border-color: #a51321;
   }
 `
+
+const Navigation = ({color}) =>
+      <Nav>
+        <Link to="/about/"><Button color={color}>Read about me</Button></Link>
+        <Link to="/projects/"><Button color={color}>View my projects</Button></Link>
+        <Link to="/contact/"><Button color={color}>Contact me</Button></Link>
+      </Nav>
+
+
+export default Navigation
+
