@@ -9,6 +9,7 @@ const Nav = styled.nav`
   margin-top: 2em;
 `
 const Button = styled.button`
+  font-size: 1rem;
   padding: .62em 1em;
   color: ${props => props.color || '#fff'};
   background: transparent; 

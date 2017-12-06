@@ -10,11 +10,11 @@ const About = () =>  (
     <Content>
       <Navigation color="#000" />
       <Title>About me</Title>
-      <p>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston. </p>
-      <p>Currently, I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</p>
-      <p>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</p>
-      <p>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</p>
-      <a href={resume}><p>Check my complete resume</p></a>
+      <Text>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston. </Text>
+      <Text>Currently, I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</Text>
+      <Text>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</Text>
+      <Text>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</Text>
+      <a href={resume}><Text>Check my complete resume</Text></a>
     </Content>
   </Container>
 )
@@ -39,9 +39,16 @@ const Content = styled.section`
   width: 50%;
   display: flex;
   flex-direction: column;
+  
 `
 const Title = styled.h1`
   font-size: 2rem;
   margin: 2em auto 1em auto;
   color: #4691db;
+`
+const Text = styled.p`
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  line-height: 1.5;
+  word-break: keep-all;
 `

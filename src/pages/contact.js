@@ -9,8 +9,8 @@ const Contact = () =>  (
     <Content>
       <Navigation color="#000" />
       <Title>Contact me</Title>
-      <p>Feel free to contact me. I'll answer as soon as possible ;-)</p>
-      <p><a href="mailto:tiago@tiagocosta.co">tiago@tiagocosta.co</a></p>
+      <Text>Feel free to contact me. I'll answer as soon as possible ;-)</Text>
+      <Text><a href="mailto:tiago@tiagocosta.co">tiago@tiagocosta.co</a></Text>
     </Content>
   </Container>
 )
@@ -39,4 +39,10 @@ const Title = styled.h1`
   font-size: 2rem;
   margin: 2em auto 1em auto;
   color: #4691db;
+`
+const Text = styled.p`
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  line-height: 1.5;
+  word-break: keep-all;
 `

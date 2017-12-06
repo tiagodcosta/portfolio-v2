@@ -23,7 +23,6 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: linear-gradient(40deg, #4691db, #1976D2); 
-  font-family: 'Montserrat', Verdana, sans-serif;
   color: #fff; 
 `
 //Content styles
@@ -31,7 +30,7 @@ const Content = styled.section`
   width: 55%;
   display: flex;
   flex-direction: column;
-  line-height: 2.0;
+  line-height: 1.5;
 `
 const Title = styled.h1`
   font-size: 4rem;

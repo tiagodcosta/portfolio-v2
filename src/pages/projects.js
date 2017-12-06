@@ -9,9 +9,9 @@ const Projects = ({ data }) => (
     <Content>
       <Navigation color="#000" />
       <Title>Projects</Title>
-      <p>I've worked on different types of projects, technologies and concepts including JavaScript, Sass/Less, UX design, Digital Art and gaming.</p>  
+      <Text>I've worked on different types of projects, technologies and concepts including JavaScript, Sass/Less, UX design, Digital Art and gaming.</Text>  
       
-      <p>Here are some of my recent ones.</p>
+      <Text>Here are some of my recent ones.</Text>
       <List>
         {data.allMarkdownRemark.edges.map(({node, index}) => (
           <ListItem key={index}>
@@ -94,6 +94,12 @@ const Link = styled.a`
       color: #808080;
     }
 
+`
+const Text = styled.p`
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  line-height: 1.5;
+  word-break: keep-all;
 `
 
 export const query = graphql`
