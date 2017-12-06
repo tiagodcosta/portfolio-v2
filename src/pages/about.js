@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import Navigation from '../components/Navigation'
 import resume from '../files/costatiago_resume.pdf'
+
+import Navigation from '../components/Navigation'
 
 const About = () =>  (
   <Container>
@@ -14,7 +14,7 @@ const About = () =>  (
       <p>Currently I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</p>
       <p>I love to code and put the user first in a project. I am constantly in contact with new concepts, technologies and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</p>
       <p>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</p>
-      <Link to={resume}><p>Check my complete resume</p></Link>
+      <a href={resume}><p>Check my complete resume</p></a>
     </Content>
   </Container>
 )
