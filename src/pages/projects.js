@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import Navigation from '../components/Navigation'
@@ -10,13 +9,13 @@ const Projects = ({ data }) => (
     <Content>
       <Navigation color="#000" />
       <Title>Projects</Title>
-      <p>I've worked on different types of projects, technologies and concepts including JavaScript, Sass/Less, UX design, Digital Art and data modeling.</p>  
+      <p>I've worked on different types of projects, technologies and concepts including JavaScript, Sass/Less, UX design, Digital Art and gaming.</p>  
       
       <p>Here are some of my recent ones.</p>
       <List>
         {data.allMarkdownRemark.edges.map(({node, index}) => (
           <ListItem key={index}>
-            <ItemTitle>{node.frontmatter.title}</ItemTitle>
+            <ItemTitle><Link href={node.frontmatter.link}>{node.frontmatter.title}</Link></ItemTitle>
             <ItemYear>{node.frontmatter.year}</ItemYear>
             <ItemTags>{node.frontmatter.tags}</ItemTags>
             <ItemText>{node.excerpt}</ItemText>
@@ -43,7 +42,7 @@ const Container = styled.div`
 //Content styles
 const Content = styled.section`
   margin-top: 2em;
-  max-width: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 `
@@ -56,28 +55,45 @@ const Title = styled.h1`
 const List = styled.ul`
     list-style: none;
     margin: 0;
+    margin-bottom: 2em;
     paddding: 0;
 `
 const ListItem = styled.li`
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 `
 const ItemTitle = styled.h2`
     font-size: 1.5rem;
     margin: 0;
-    margin-top: 1em;
+    margin-top: 1.2em;
 `
 const ItemYear = styled.p`
     font-size: 1rem;
+    font-style: italic;
     margin: 0;
+    margin-top: .62em;
 `
 const ItemTags = styled.p`
     font-size: 1rem;
     margin: 0;
+    font-style: italic;
 `
 const ItemText = styled.p`
     font-size: 1rem;
     margin: 0;
+    margin-top: .62em;
+`
+const Link = styled.a`
+    color: #000;
+
+    &:hover {
+      color: #a51321;
+    }
+    &:visited {
+      color: #808080;
+    }
+
 `
 
 export const query = graphql`

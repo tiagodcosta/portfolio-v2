@@ -23,17 +23,19 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background: linear-gradient(40deg, #4691db, #1976D2); 
-  font-family: 'Lato', Verdana, sans-serif;
+  font-family: 'Montserrat', Verdana, sans-serif;
   color: #fff; 
 `
 //Content styles
 const Content = styled.section`
-  max-width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
+  line-height: 2.0;
 `
 const Title = styled.h1`
   font-size: 4rem;
+  margin: 0 auto;
 `
 const TitleRed = styled.span`
   color: #a51321;
@@ -42,4 +44,5 @@ const Text = styled.p`
   font-size: 2rem;
   display: block;
   color: #000;
+  margin: 0 auto
 `

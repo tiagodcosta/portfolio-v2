@@ -8,28 +8,35 @@ const Contact = () =>  (
   <Container>
     <Content>
       <Navigation color="#000" />
-      <h1>Contact me</h1>
-      <p>This is the contact page</p>
+      <Title>Contact me</Title>
+      <p>Feel free to contact me. I'll answer as soon as possible ;-)</p>
+      <p><a href="mailto:tiago@tiagocosta.co">tiago@tiagocosta.co</a></p>
     </Content>
   </Container>
 )
 
 export default Contact
 
-//Container styles
 const Container = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(40deg, #4691db, #1976D2); 
+  background: #fff; 
   font-family: 'Lato', Verdana, sans-serif;
-  color: #fff; 
+  color: #000; 
+  overflow: hidden;
 `
 //Content styles
 const Content = styled.section`
-  max-width: 50%;
+  margin-top: 2em;
+  width: 50%;
   display: flex;
   flex-direction: column;
+`
+const Title = styled.h1`
+  font-size: 2rem;
+  margin: 2em auto 1em auto;
+  color: #4691db;
 `

@@ -11,8 +11,8 @@ const About = () =>  (
       <Navigation color="#000" />
       <Title>About me</Title>
       <p>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston. </p>
-      <p>Currently I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</p>
-      <p>I love to code and put the user first in a project. I am constantly in contact with new concepts, technologies and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</p>
+      <p>Currently, I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</p>
+      <p>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</p>
       <p>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</p>
       <a href={resume}><p>Check my complete resume</p></a>
     </Content>
@@ -36,7 +36,7 @@ const Container = styled.div`
 //Content styles
 const Content = styled.section`
   margin-top: 2em;
-  max-width: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 `

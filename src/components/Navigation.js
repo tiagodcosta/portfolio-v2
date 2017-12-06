@@ -14,7 +14,7 @@ const Button = styled.button`
   background: transparent; 
   border: 2px solid ${props => props.color || '#fff'};
   cursor: pointer;
-  outline: focus;
+  outline: none;
 
   &:hover {
     color: #a51321;
