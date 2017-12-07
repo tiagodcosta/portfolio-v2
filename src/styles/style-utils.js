@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 const sizes = {
   bigMonitor: 2560, 
   laptop: 1600,
-  phone: 450,
+  phone: 740,
 }
 
 const media = Object.keys(sizes).reduce((accumulator, label) => {
