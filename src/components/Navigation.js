@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled, { attrs } from 'styled-components'
+import media from '../styles/style-utils'
 import Link from 'gatsby-link'
 
 const Nav = styled.nav`
@@ -7,6 +8,14 @@ const Nav = styled.nav`
   flex-direction: row;
   justify-content: space-around;
   margin-top: 2em;
+
+  ${media.phone`
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1em;
+  `}
+
 `
 const Button = styled.button`
   font-size: 1rem;
@@ -17,10 +26,17 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
 
+  ${media.phone`
+    margin-bottom: 1em;
+  `}
+
   &:hover {
     color: #a51321;
     border-color: #a51321;
   }
+
+
+
 `
 
 const Navigation = ({color}) =>

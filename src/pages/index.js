@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import media from '../styles/style-utils'
 import Navigation from '../components/Navigation'
 
 const IndexPage = () => (
@@ -31,17 +31,47 @@ const Content = styled.section`
   display: flex;
   flex-direction: column;
   line-height: 1.5;
+
+  ${media.laptop`
+    width: 70%;
+    text-align: center;
+  `}
+
+  ${media.phone`
+    width: 100%;
+    padding: 0 1em;
+    align-items: flex-end;
+  `}
+
 `
 const Title = styled.h1`
   font-size: 4rem;
   margin: 0 auto;
-`
-const TitleRed = styled.span`
-  color: #a51321;
+
+  ${media.laptop`
+    font-size: 3.5rem;
+    margin: 0;
+  `}
+
+  ${media.phone`
+    font-size: 3rem;
+    margin: 0;
+  `}
+
 `
 const Text = styled.p`
   font-size: 2rem;
   display: block;
   color: #000;
-  margin: 0 auto
+  margin: 0 auto;
+
+  ${media.laptop`
+    font-size: 1.5rem;
+    margin: 0;
+  `}
+  
+  ${media.phone`
+    font-size: 1.5rem;
+    margin: 0;
+  `} 
 `

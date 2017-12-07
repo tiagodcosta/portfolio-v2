@@ -1,4 +1,5 @@
 import { injectGlobal } from 'styled-components'
+import media from './style-utils'
 
 injectGlobal`
 
@@ -11,6 +12,10 @@ injectGlobal`
 }
 html {
   font-size: 16px;
+
+  ${media.phone`
+    font-size: 14px;
+  `}
 }
 
 body {

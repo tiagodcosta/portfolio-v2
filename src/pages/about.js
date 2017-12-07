@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import media from '../styles/style-utils'
 import resume from '../files/costatiago_resume.pdf'
 
 import Navigation from '../components/Navigation'
@@ -10,7 +10,7 @@ const About = () =>  (
     <Content>
       <Navigation color="#000" />
       <Title>About me</Title>
-      <Text>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston. </Text>
+      <Text>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston, MA.</Text>
       <Text>Currently, I work as UI Developer at Northeastern University and Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</Text>
       <Text>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</Text>
       <Text>I enjoy playing guitar and cooking. I played in bands when I was a teenager. At the weekends, I always cook a barbecue or try a new recipe with my friends.</Text>
@@ -39,6 +39,16 @@ const Content = styled.section`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  ${media.laptop`
+    width: 65%;
+  `}
+
+  ${media.phone`
+    width: 100%;
+    padding: 0 1em;
+  `}
+
   
 `
 const Title = styled.h1`

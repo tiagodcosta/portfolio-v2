@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import media from '../styles/style-utils'
 import Navigation from '../components/Navigation'
 
 
@@ -45,6 +45,16 @@ const Content = styled.section`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  ${media.laptop`
+    width: 65%;
+  `}
+  
+  ${media.phone`
+    width: 100%;
+    padding: 0 1em;
+  `}
+
 `
 const Title = styled.h1`
   font-size: 2rem;
