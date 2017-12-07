@@ -6,4 +6,4 @@ tags: "CreateJS, CSS, UI"
 link: "http://tiagocosta.co/hades/"
 ---
 
-Co-developed a game about how science fiction
+Co-developed a game about science fiction

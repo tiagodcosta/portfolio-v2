@@ -13,7 +13,7 @@ const Projects = ({ data }) => (
       
       <Text>Here are some of my recent ones.</Text>
       <List>
-        {data.allMarkdownRemark.edges.map(({node, index}) => (
+        {data.allMarkdownRemark.edges.map(({node}, index) => (
           <ListItem key={index}>
             <ItemTitle><Link href={node.frontmatter.link}>{node.frontmatter.title}</Link></ItemTitle>
             <ItemYear>{node.frontmatter.year}</ItemYear>

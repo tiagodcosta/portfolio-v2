@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 
 const sizes = {
   bigMonitor: 2560, 
-  laptop: 1600,
+  laptop: 1000,
   phone: 740,
 }
 

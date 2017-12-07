@@ -6,4 +6,4 @@ tags: "Polymer, SASS, UI library"
 link: "https://github.com/inkdlab/inkd-ml/tree/2.0.0/inkd-dev"
 ---
 
-Codevelop an UI library for Northastern University faculty (in development)
+Redesign and code an UI library for Northeastern University faculty (in development)
