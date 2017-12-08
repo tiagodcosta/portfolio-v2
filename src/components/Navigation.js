@@ -34,9 +34,6 @@ const Button = styled.button`
     color: #a51321;
     border-color: #a51321;
   }
-
-
-
 `
 
 const Navigation = ({color}) =>

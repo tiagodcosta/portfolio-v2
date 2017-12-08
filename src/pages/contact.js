@@ -9,7 +9,7 @@ const Contact = () =>  (
     <Content>
       <Navigation color="#000" />
       <Title>Contact me</Title>
-      <Text>Feel free to contact me. I'll answer as soon as possible ;-)</Text>
+      <Text>Feel free to contact me. I'll answer promptly ;-)</Text>
       <Text><a href="mailto:tiago@tiagocosta.co">tiago@tiagocosta.co</a></Text>
     </Content>
   </Container>

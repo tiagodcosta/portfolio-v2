@@ -6,4 +6,4 @@ tags: "UX, UI design, Prototyping"
 link: "http://tiagocosta.co/foodboard/foodboard.html"
 ---
 
-Designed and prototype an app that scanned food calories.
+Designed and prototyped an app that scanned food calories.
