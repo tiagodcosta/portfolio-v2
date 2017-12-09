@@ -27,7 +27,7 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
-//data
+// data
 export const query = graphql`
   query IndexQuery {
     site {
@@ -37,7 +37,7 @@ export const query = graphql`
     }
   }
 `
-//styles
+// styles
 const MainContainer = styled.div`
   padding: 0;
   margin: 0;
