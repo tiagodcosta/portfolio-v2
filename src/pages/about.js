@@ -31,6 +31,15 @@ export default About
 
 const Profile = styled.div`
   display: flex;
+  
+  ${media.laptop`
+   display: block;
+  `}
+
+  ${media.phone`
+    display: block;
+  `}  
+
 `
 const ProfilePic = styled.div`
   flex: 1;

@@ -38,6 +38,7 @@ const Container = styled.div`
   background: #fff; 
   font-family: 'Lato', Verdana, sans-serif;
   color: #000;
+  overflow-X: hidden;
 `
 //Content styles
 const Content = styled.section`
