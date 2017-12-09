@@ -17,7 +17,7 @@ const About = () =>  (
         </ProfilePic>
         <ProfileText>
           <Text>Hi! I'm Tiago Costa. I'm a Web Developer based in Boston, MA.</Text>
-          <Text>Currently, I work as UI Developer at Northeastern University and on the local nonprofit Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX) and Communication.</Text>
+          <Text>Currently, I work as UI Developer at Northeastern University and on the local nonprofit Boston Dhammakaya Foundation, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX) and Communication skills.</Text>
           <Text>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</Text>
           <Text>I enjoy playing guitar and cooking. I played in bands when I was a teenager. On the weekends, I often cook a barbecue or try a new recipe with my friends.</Text>
           <a href={resume}><Text>Check my complete resume</Text></a> 
