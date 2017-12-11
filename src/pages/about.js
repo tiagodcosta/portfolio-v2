@@ -47,6 +47,10 @@ const ProfilePic = styled.div`
 const ProfileText = styled.div`
   flex: 3;
   padding-left: 1.5em;
+
+  ${media.phone`
+    padding-left: 0;
+  `}  
 `
 
 //Container styles
