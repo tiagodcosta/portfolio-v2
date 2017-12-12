@@ -40,7 +40,7 @@ const Content = styled.section`
   ${media.phone`
     width: 100%;
     padding: 0 1em;
-    align-items: flex-end;
+    text-align: right;
   `}
 
 `

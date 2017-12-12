@@ -13,7 +13,7 @@ const Nav = styled.nav`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 1em;
+    padding: 0 0em;
   `}
 
 `

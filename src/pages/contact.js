@@ -49,6 +49,11 @@ const Title = styled.h1`
   font-size: 2rem;
   margin: 2em auto 1em auto;
   color: #4691db;
+
+  ${media.phone`
+    margin: 1em 0;
+  `}
+
 `
 const Text = styled.p`
   font-size: 1rem;
