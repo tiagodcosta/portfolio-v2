@@ -130,7 +130,7 @@ query ProjectsQuery {
           tags
           link
         }
-        excerpt
+        excerpt(pruneLength: 400)
       }
     }
   }
