@@ -1,5 +1,5 @@
 ---
-title: "Boston Brain Jukebox"
+title: "Boston Brains Jukebox"
 date: "2017-08-01"
 year: "2017"
 tags: "ReactJS, Arduino, Node.js, Neurosky, Digital Art, IoT"
