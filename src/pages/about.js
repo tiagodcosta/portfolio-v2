@@ -16,8 +16,8 @@ const About = () =>  (
           <Image src={profilePic} alt="tiago" />
         </ProfilePic>
         <ProfileText>
-          <Text>Hi! I'm Tiago Costa. I'm a Front End Developer based in Boston, MA.</Text>
-          <Text>Currently, I work as  Front End Developer at FUNDopolis, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX).</Text>
+          <Text>Hi! I'm Tiago Costa. I'm a Senior Front End Developer based in Boston, MA.</Text>
+          <Text>Currently, I work as a Principal Developer at FUNDopolis, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX) and Management.</Text>
           <Text>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</Text>
           <Text>I enjoy playing guitar and cooking. I played in bands when I was a teenager. On the weekends, I often cook a barbecue or try a new recipe with my friends.</Text>
           <a href={resume}><Text>Check my complete resume</Text></a> 
