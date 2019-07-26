@@ -10,7 +10,7 @@ const Contact = () =>  (
       <Navigation color="#000" />
       <Title>Contact me</Title>
       <Text>Feel free to contact me. I'll answer promptly ;-)</Text>
-      <Text><a href="mailto:tiago@tiagocosta.co">tiago@tiagocosta.co</a></Text>
+      <Text><a href="mailto:tiago@tiagocosta.dev">tiago@tiagocosta.dev</a></Text>
     </Content>
   </Container>
 )
