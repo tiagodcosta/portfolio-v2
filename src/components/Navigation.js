@@ -38,7 +38,6 @@ const Button = styled.button`
 
 const Navigation = ({color}) =>
       <Nav>
-        <Link to="/about/"><Button color={color}>Read about me</Button></Link>
         <Link to="/contact/"><Button color={color}>Contact me</Button></Link>
       </Nav>
 

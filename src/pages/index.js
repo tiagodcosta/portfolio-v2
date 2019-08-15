@@ -8,7 +8,7 @@ const IndexPage = () => (
     <Content>
       <Title>Tiago Costa</Title>
       <Text>Front End/UX Engineer</Text>
-      {/* <Navigation color="#fff" /> */}
+      <Navigation color="#fff" />
     </Content>
   </Container>
 )
