@@ -38,7 +38,8 @@ const Button = styled.button`
 
 const Navigation = ({color}) =>
       <Nav>
-        <Link to="/contact/"><Button color={color}>Contact me</Button></Link>
+        <a href="https://medium.com/@tiago_costa/"><Button color={color}>Articles</Button></a>
+        <Link to="/contact/"><Button color={color}>Contact</Button></Link>
       </Nav>
 
 
