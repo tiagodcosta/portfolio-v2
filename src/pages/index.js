@@ -6,8 +6,8 @@ import Navigation from '../components/Navigation'
 const IndexPage = () => (
   <Container>
     <Content>
-      <Title>Tiago Costa</Title>
-      <Text>Front End/UX Engineer</Text>
+      <Title>tiago costa</Title>
+      <Text>front end - ux engineer</Text>
       <Navigation color="#fff" />
     </Content>
   </Container>
