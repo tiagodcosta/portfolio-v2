@@ -7,7 +7,7 @@ const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 2em;
+  margin-top: 3.5em;
 
   ${media.phone`
     flex-direction: column;
