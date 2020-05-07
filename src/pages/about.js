@@ -16,12 +16,15 @@ const About = () =>  (
           <Image src={profilePic} alt="tiago" />
         </ProfilePic>
         <ProfileText>
-          <Text>Hi! I'm Tiago Costa. I'm a Front End Developer based in Boston, MA.</Text>
-          {/* <Text>Currently, I work as a Front End Developer at FUNDopolis, where I have the opportunity to combine my previous technical experience with my knowledge of User Experience (UX) and Management.</Text> */}
-          <Text>During my career, I worked for companies of different areas - financial, education, telecom, media and entertainment.</Text>
-          <Text>I love to code and put the user first on a project. I am constantly in contact with new concepts, technologies, and other professionals. I always attend hackathons and meetups in the Boston Area, where I always chat with talented people.</Text>
-          <Text>I enjoy playing guitar and cooking. I played in bands when I was a teenager. On the weekends, I often cook a barbecue or try a new recipe with my friends.</Text>
-          {/* <a href={resume}><Text>Check my complete resume</Text></a> */}
+        <Text>Hello there! My name is Tiago. I'm a web engineer, and writer focused on UX and frontend development. Currently, I work on <ProfileLink href="http://www.innerpeacetime.org">Inner Peace Time</ProfileLink>, a project that has the mission of introducing well-being and mindfulness to workplaces.</Text> 
+        
+        <Text>Before now, I worked for startups in Boston, Innovation Department of Northeastern University, <ProfileLink href="https://wwww.mtv.com">MTV</ProfileLink>, <ProfileLink href="https://www.cnn.com">CNN</ProfileLink>, <ProfileLink href="http://www.oi.com.br">Oi Telecom</ProfileLink>, and <ProfileLink href="http://www.ig.com.br">Internet Group of Brazil</ProfileLink>. I was also a contributor to open source projects like WordPress and Code for America.</Text>
+
+          <Text>I'm certified in Strategy and Innovation at <ProfileLink href="http://www.mit.edu">MIT</ProfileLink> and hold a Master of UX and Web Development from <ProfileLink href="http://www.northeastern.edu">Northeastern University</ProfileLink>, Boston, Massachusetts. </Text>
+          <Text></Text>
+          <Text>Blog: https://dev.to/tiagodcosta</Text>
+          <Text>Contact: tiago@tiagocosta.dev</Text>
+          <Text>Github: tiagodcosta </Text>
         </ProfileText>
       </Profile> 
     </Content>
@@ -42,6 +45,12 @@ const Profile = styled.div`
   `}  
 
 `
+const ProfileLink = styled.a`
+  text-decoration: none;
+  font-weight: 800;
+  color: #082440;
+`;
+
 const ProfilePic = styled.div`
   flex: 1;
 `
